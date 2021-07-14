@@ -1,0 +1,444 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/* utilities */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1130px;
+    margin-bottom: 126px;
+    background-color: white;
+}
+/* header section styles */
+header{
+    height: 677px;
+    color: white;
+    background-color: #2D25A0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.nav-section{
+    width: 1160px;
+    height: 44px;
+    margin-top: 42px;
+    margin-bottom: 67px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linked-pages{
+    width: 587px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pages a{
+    text-decoration: none;
+    color: white;
+}
+.login{
+    background-color: #E02C6D;
+    display: flex;
+    align-items: center;
+    width: 123px;
+    justify-content: space-evenly;
+    
+}
+.login:hover{
+    background-color: teal;
+    transition: background-color .5s;
+}
+/* banners styles */
+.banners{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+}
+.title-head{
+    width: 485px;
+} 
+.title-head h1{
+    font-size: 54px;
+}
+.title-button{
+    width: 168px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E02C6D;
+    transition: transform 1s;
+}
+.title-button:hover{
+    background-color: lightseagreen;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.title-button a{
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;
+}
+
+.banner{
+    width: 556px;
+    height: 438px;
+    display: flex;
+    justify-content: center;
+}
+.banner img{
+    width: 388px;
+    height: 428px;
+    margin-left: 150px;
+}
+
+/* main section styles */
+main{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/* profiles section styles */
+.profiles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 30px;
+}
+.profile{
+    width: 330px;
+    height: 510px;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(0,0,0,0),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.profile img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+.profile h2 .profile p{
+    font-family: 'Poppins', sans-serif;
+}
+/* topics styles */
+.topics{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.topic h3{
+    width: 200px;
+} 
+.topic-info{
+    display: flex;
+    align-items: center;
+}
+.topic-info>div{
+    margin-right: 10px;
+}
+
+.topic-info img{
+    height: 40px;
+    width: 40px;
+}
+.icons{
+    font-size: 34px;
+}
+.topic a{
+    text-decoration: none;
+    color: black;
+}
+
+/* search bar styles */
+.search{
+    width: 700px;
+}
+.content{
+    color: #10437A;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+#input{
+        width: 85%;
+        height: 30px;
+        border: 3px solid #10437A;
+        border-radius: 5px;
+    }
+#btn{
+    height: 37px;
+    border: 3px solid #10437A;
+    border-radius: 5px;
+    font-weight: 700;
+}
+#btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #10437A;
+    transition: background-color .5s;
+}
+
+/* footer styles */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* copyrigts section , social section styles */
+
+.copyrights-section{
+    height: 200px;
+    width: 484px;
+    margin: 0 0 60px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-section img{
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+}
+.social-section{
+    height: 20px;
+    width: 170px;
+    display: grid;
+    margin: 20px 0;
+    grid-template-columns: repeat(4,1fr);
+}
+.social-section img{
+    width: 32px;
+    height: 32px;
+    padding-top: 50px;
+}
+.info-section{
+    text-align: center;
+    width: 320px;
+    height: 31px;
+}
+.info-section h4{
+    margin: 0;
+    padding-top: 50px;
+    font-weight: 250;
+}
+
+/* ----------media query-------------- */
+@media (max-width:688px) {
+/* utilites */
+    .container{
+        width: 100%;
+    }
+
+/* header styles  */
+    header{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    /* nav styles  */
+    .nav-section{
+        width: 100%;
+        height: auto;
+        padding: 0 20px 10px;
+        margin-bottom: 36px;
+        border-bottom: 1px solid white;
+    }
+    .linked-pages{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2em
+    }
+    .active{
+        font-size: 1.3em;
+        margin-left: 10px;
+    }
+    .hidden{
+        display: none;
+    }
+    .login{
+        height: 41px;
+    }
+    /* banners styles  */
+    .banners{
+        width: 100%;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        padding-left:20px;
+        margin-bottom: 50px;
+    }
+    .title-head{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        margin-bottom: 62px;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner img{
+        margin: 0;
+    }
+/* main styles  */
+    /* profiles section,topic section and search bar style */
+    .profiles,.topics,.topic{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .topic{
+        margin-bottom: 40px;
+    }
+    .topic h3{
+        width: 100%;
+    }
+    .topic-info{
+        width: 298px;
+        height: 47px;
+    }
+    .search{
+        width: 80%;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        
+    }
+    #input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+/* footer styles  */
+    footer{
+        flex-flow: column;
+        margin-bottom: 150px;
+    }
+    .copyrights-section{
+        width: 90%;
+        height: 144px;
+    }
+    .logo-section img{
+        width: 100%;
+        height: 71px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+/* utilites */
+.container{
+    width: 100%;
+}
+/* header styles  */
+    header{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .nav-section{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .banners{
+        width: 100%;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        margin: 0 0 50px 30px;
+    }
+    .title-head{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        margin-bottom: 62px;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner img{
+        margin: 0;
+    }
+/* main styles  */
+    /* players styles  */
+    .profiles{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .profile{
+        margin-left: 10px;
+    }
+    /* topics styles  */
+    .topics{
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* search styles */
+    .search{
+        width: 100%;
+    }
+    #input{
+        margin-left: 20px;
+    }
+    footer{
+        margin-bottom: 100px;
+    }
+}
+
+/* container two added */
+
+.container.two {
+    margin:0%;
+    background-color:aliceblue;
+  }
+  .play-info h2 {
+      text-align:justify;
+    font-size: 32px;
+    color: #0a0826;
+    margin-bottom: 10px;
+  }
+  .play-info a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #e02c6d;
+    background-color: #e02c6d;
+    padding: 10px 24px;
+    margin: 0px
+  }
+  .play-pic img {
+      margin-top: 20px;
+    width: 800px;
+    height: 600px;
+    margin-right: 10px;
+  }
+  .play-info p {
+    font-size: 16px;
+    margin-left: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #6c6c6c;
+    padding-right: 170px;
+  }
+
+  /* container two adding ends */
